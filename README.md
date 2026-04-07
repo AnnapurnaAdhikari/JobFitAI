@@ -1,6 +1,6 @@
 # 🚀 AI Career Assistant
 
-An AI-powered platform that analyzes resumes and recommends relevant job roles based on extracted skills.
+An AI-powered platform that analyzes resumes, extracts skills, recommends jobs, and provides a personalized learning roadmap to bridge skill gaps.
 
 ---
 
@@ -12,7 +12,11 @@ Extract Text
 ↓
 Extract Skills
 ↓
-Match Jobs *(coming next)*
+Match Jobs
+↓
+Identify Skill Gaps
+↓
+Generate Learning Roadmap
 ↓
 Show Results
 
@@ -22,17 +26,32 @@ Show Results
 
 * 📄 Resume Upload (PDF → Text)
 * 🧠 Skill Extraction (Text → Skills)
-* 🎯 Job Recommendation *(in progress)*
+* 🎯 Job Recommendation (Skills → Jobs + Match Score)
+* 📉 Skill Gap Analyzer (Missing Skills Identification)
+* 🗺️ Learning Roadmap (Skills → Categorized Resources)
 
 ---
 
 ## ⚙️ What’s Implemented
 
-* FastAPI backend setup
+* FastAPI backend
 * Resume upload API
 * PDF text extraction
-* Dynamic skill extraction using real-world dataset
-* Modular project structure (feature-based)
+* Dynamic skill extraction using dataset
+* Job matching using real-world job data
+* Skill gap analysis
+* Categorized learning roadmap generation
+* Modular backend architecture
+
+---
+
+## 🔗 API Documentation
+
+### Swagger UI (Test APIs here)
+
+```text
+http://127.0.0.1:8000/docs
+```
 
 ---
 
@@ -44,19 +63,32 @@ Show Results
 POST /upload-resume
 ```
 
-### Example (Local)
+---
 
-```
-http://127.0.0.1:8000/upload-resume
-```
-
-### Response
+## 📥 Example Response
 
 ```json
 {
   "filename": "resume.pdf",
-  "skills": ["python", "sql", "machine learning"],
-  "text_preview": "..."
+  "skills": ["python", "sql"],
+  "recommended_jobs": [
+    {
+      "job_title": "Data Scientist",
+      "match_score": 0.6,
+      "matched_skills": ["python", "sql"],
+      "missing_skills": ["machine learning", "tensorflow"],
+      "learning_roadmap": [
+        {
+          "skill": "machine learning",
+          "category": "Data Science & AI",
+          "resources": [
+            "Andrew Ng ML Course (Coursera)",
+            "Kaggle"
+          ]
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -65,24 +97,27 @@ http://127.0.0.1:8000/upload-resume
 ## 🛠️ Tech Stack
 
 * Backend: FastAPI
-* NLP: Basic text + dataset-driven matching
-* Data: Custom skills dataset
+* NLP: Text processing + dataset-driven matching
+* Data: Skills dataset + job dataset
+* Architecture: Modular (feature-based)
 
 ---
 
 ## 📌 Current Status
 
-✅ Resume parsing
-✅ Skill extraction
-🔄 Job matching (next step)
+* ✅ Resume parsing
+* ✅ Skill extraction
+* ✅ Job recommendation
+* ✅ Skill gap analysis
+* ✅ Learning roadmap generation
 
 ---
 
 ## 🚀 Next Steps
 
-* Job Recommendation Engine
-* Skill Gap Analyzer
-* Interview Question Generator
 * AI Mock Interview System
+* Semantic Job Matching (embeddings)
+* Frontend (React dashboard)
+* Speech-to-text for interviews
 
 ---
