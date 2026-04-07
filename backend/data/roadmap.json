@@ -1,0 +1,142 @@
+{
+  "roadmap": [
+    {
+      "category": "Programming Languages",
+      "skills": [
+        "python", "java", "c++", "c#", "go", "rust", "scala", "r", "perl", "php", "ruby", "swift", "kotlin"
+      ],
+      "resources": [
+        "freeCodeCamp",
+        "Coursera Programming Courses",
+        "LeetCode Practice"
+      ]
+    },
+    {
+      "category": "Web Development",
+      "skills": [
+        "html", "css", "javascript", "typescript", "react", "angular", "vue.js", "node.js", "graphql", "rest api"
+      ],
+      "resources": [
+        "MDN Web Docs",
+        "freeCodeCamp",
+        "Frontend Masters"
+      ]
+    },
+    {
+      "category": "Mobile Development",
+      "skills": [
+        "android", "ios", "flutter", "react native", "mobile ui/ux"
+      ],
+      "resources": [
+        "Android Developer Docs",
+        "Flutter Docs",
+        "React Native Docs"
+      ]
+    },
+    {
+      "category": "Data Science & AI",
+      "skills": [
+        "machine learning", "deep learning", "nlp", "statistics", "data analysis", "numpy", "pandas", "scikit-learn", "tensorflow", "pytorch", "jupyter"
+      ],
+      "resources": [
+        "Andrew Ng ML Course (Coursera)",
+        "Kaggle",
+        "Deep Learning Specialization"
+      ]
+    },
+    {
+      "category": "Databases",
+      "skills": [
+        "sql", "mysql", "postgresql", "mongodb", "cassandra", "oracle", "redis", "nosql", "database design", "query optimization"
+      ],
+      "resources": [
+        "Mode Analytics SQL",
+        "Database Internals",
+        "LeetCode SQL"
+      ]
+    },
+    {
+      "category": "Cloud & DevOps",
+      "skills": [
+        "aws", "azure", "gcp", "docker", "kubernetes", "terraform", "ansible", "ci/cd", "jenkins", "cloudformation", "serverless", "microservices", "shell scripting"
+      ],
+      "resources": [
+        "AWS Cloud Practitioner",
+        "Docker Docs",
+        "Kubernetes.io"
+      ]
+    },
+    {
+      "category": "Cybersecurity",
+      "skills": [
+        "network security", "encryption", "firewalls", "penetration testing", "security architecture", "security protocols", "risk assessment", "mobile security"
+      ],
+      "resources": [
+        "OWASP",
+        "TryHackMe",
+        "Cybrary"
+      ]
+    },
+    {
+      "category": "UI/UX & Design",
+      "skills": [
+        "figma", "adobe creative suite", "graphic design", "web design", "user interface", "user experience", "wireframing", "prototyping", "responsive design", "web accessibility"
+      ],
+      "resources": [
+        "Figma Docs",
+        "Adobe Tutorials",
+        "UX Design Courses (Coursera)"
+      ]
+    },
+    {
+      "category": "Data Visualization & BI",
+      "skills": [
+        "power bi", "tableau"
+      ],
+      "resources": [
+        "Microsoft Learn",
+        "Tableau Public Training"
+      ]
+    },
+    {
+      "category": "Project Management & Agile",
+      "skills": [
+        "agile", "scrum", "kanban", "jira", "confluence", "project management"
+      ],
+      "resources": [
+        "Scrum Guide",
+        "Atlassian University"
+      ]
+    },
+    {
+      "category": "Business & Finance",
+      "skills": [
+        "business acumen", "business development", "market research", "marketing", "financial analysis", "budget management", "p&l management", "sales", "seo"
+      ],
+      "resources": [
+        "Google Digital Marketing",
+        "HubSpot Academy"
+      ]
+    },
+    {
+      "category": "Soft Skills",
+      "skills": [
+        "communication", "leadership", "teamwork", "problem solving", "critical thinking", "decision making", "negotiation", "adaptability", "creativity", "mentoring", "presentation skills", "time management", "strategic planning"
+      ],
+      "resources": [
+        "LinkedIn Learning",
+        "Harvard Online Courses"
+      ]
+    },
+    {
+      "category": "Software Engineering Practices",
+      "skills": [
+        "ci/cd", "documentation", "app testing", "compliance", "technical writing"
+      ],
+      "resources": [
+        "Google Engineering Practices",
+        "Testing Docs"
+      ]
+    }
+  ]
+}

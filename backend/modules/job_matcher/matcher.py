@@ -1,6 +1,7 @@
 import json
 import os
 from modules.skill_analyzer.skill_gap import get_skill_gap
+from modules.skill_analyzer.roadmap import generate_roadmap
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 JOBS_PATH = os.path.join(BASE_DIR, "data", "job_dataset.json")
@@ -33,12 +34,14 @@ def match_jobs(user_skills):
         score = len(matched) / len(combined)
 
         missing_skills = get_skill_gap(user_skills, job)
+        roadmap = generate_roadmap(missing_skills[:5])
 
         results.append({
             "job_title": job_title,
             "match_score": round(score, 2),
             "matched_skills": list(matched),
-            "missing_skills": missing_skills[:5]  # limit for clarity
+            "missing_skills": missing_skills[:5],  # limit for clarity
+            "learning_roadmap": roadmap
         })
 
     return sorted(results, key=lambda x: x["match_score"], reverse=True)[:5]
