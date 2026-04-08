@@ -15,7 +15,8 @@ SKILLS_DB = load_skills()
 ALIASES = {
     "ml": "machine learning",
     "dl": "deep learning",
-    "js": "javascript"
+    "js": "javascript",
+    "HTML/CSS": ["HTML", "CSS"]
 }
 
 def extract_skills(text):

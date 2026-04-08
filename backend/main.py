@@ -2,8 +2,16 @@ from fastapi import FastAPI, File, UploadFile
 from modules.resume_parser.parser import extract_text_from_pdf
 from modules.skill_analyzer.skill_extractor import extract_skills
 from modules.job_matcher.matcher import match_jobs
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 def home():
