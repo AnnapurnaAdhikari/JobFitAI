@@ -102,6 +102,42 @@ POST /upload-resume
 * Architecture: Modular (feature-based)
 
 ---
+## ⚙️ Installation & Setup
+### 🔹 1. Clone Repository
+```bash
+git clone https://github.com/AnnapurnaAdhikari/JobFitAI.git
+cd JobFitAI
+```
+### 🔹 2. Setup Backend (FastAPI)
+```bash
+cd backend
+pip install -r requirements.txt
+```
+#### Run backend server:
+```bash
+uvicorn main:app --reload
+```
+
+#### Backend will run at:
+```text
+http://127.0.0.1:8000
+```
+#### Swagger UI:
+```text
+http://127.0.0.1:8000/docs
+```
+
+### 🔹 3. Setup Frontend (React)
+```bash
+cd frontend
+npm install
+npm start
+```
+Frontend will run at:
+```text 
+http://localhost:5173/
+```
+---
 
 ## 📌 Current Status
 
@@ -120,4 +156,6 @@ POST /upload-resume
 * Frontend (React dashboard)
 * Speech-to-text for interviews
 
+## 📸 Screenshots
+![alt text](image.png)
 ---
